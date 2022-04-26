@@ -11,3 +11,14 @@ function listarTodosOsFilmes(filmes) {
   }
 }
 listarTodosOsFilmes(catalogoObj.data);
+
+function ListarFilmesEmCartaz(filmes) {
+  const FilmesEmCartaz = filmes.filter((filme) => {
+      if (filme.emCartaz === true) {
+        return true;
+      }
+    });
+    return filmesEmCartaz;
+  }
+  console.log(listarFilmesEmCartaz(catalogoObj.data));
+  
