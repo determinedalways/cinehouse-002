@@ -20,5 +20,5 @@ function ListarFilmesEmCartaz(filmes) {
     });
     return filmesEmCartaz;
   }
-  console.log(listarFilmesEmCartaz(catalogoObj.data));
+  console.log(ListarFilmesEmCartaz(catalogoObj.data));
   
