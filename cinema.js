@@ -18,7 +18,22 @@ function ListarFilmesEmCartaz(filmes) {
         return true;
       }
     });
-    return filmesEmCartaz;
+    return FilmesEmCartaz;
   }
   console.log(ListarFilmesEmCartaz(catalogoObj.data));
+
+  function alterarStatusEmCartaz(id, filmes) {
+    const idxFilme = filmes.findIndex((filme) => {
+      if (filme.codigo === id) {
+        return true;
+      }
+    });
+    if (idxFilme >= 0) {
+      filmes[idxFilme].emCartaz = !filmes[idxFilme].emCartaz;
+      return true;
+    } else {
+      return false
+    }
+  }
+console.log(alterarStatusEmCartaz(1,catalogoObj.data))  
   
